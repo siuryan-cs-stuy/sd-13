@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>NASA</title>
+  </head>
+  <body>
+    <h1>NASA Picture of the Day</h1>
+    <h2>{{ potd['title'] }}</h2>
+    <image src="{{ potd['hdurl'] }}"></image>
+    <p>{{ potd['date'] }}</p>
+    <p>{{ potd['explanation'] }}</p>
+    <p>Copyright {{ potd['copyright'] }}</p>
+  </body>
+</html>
