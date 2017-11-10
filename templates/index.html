@@ -5,6 +5,18 @@
     <title>NASA</title>
   </head>
   <body>
+    <h1>Wolfram|Alpha API</h1>
+    <h3>Ask me anything!</h3>
+    <form action="" method="GET">
+      <input type="text" name="q"></input>
+      <input type="submit">
+    </form>
+    {% if query %}
+    <p>Result: <strong>{{ query }}</strong></p>
+    {% endif %}
+
+    <br><br>
+    <hr>
     <h1>NASA Picture of the Day</h1>
     <h2>{{ potd['title'] }}</h2>
     <image src="{{ potd['hdurl'] }}" width="100%"></image>
